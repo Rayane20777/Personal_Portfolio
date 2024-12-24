@@ -37,49 +37,49 @@ const Projects: React.FC = () => {
   ]
 
   return (
-    <section id="projects" className="mb-24">
-      <h3 className="text-2xl font-semibold text-gray-100 mb-4 hover:text-emerald-400 transition-colors duration-300">
-        Projets
-      </h3>
-      <div className="space-y-12">
-        {projects.map((project, index) => (
-          <div key={index} className="group">
-            <div className="space-y-4">
-              <div className="flex items-center space-x-2">
-                <h4 className="text-xl text-gray-100 group-hover:text-emerald-400 transition-colors duration-300">
-                  {project.title}
-                </h4>
-                <div className="flex space-x-2">
-                  <ExternalLink className="w-4 h-4 text-emerald-400 group-hover:rotate-45 transition-transform duration-300" />
-                  <Github className="w-4 h-4 text-emerald-400 group-hover:scale-110 transition-transform duration-300" />
+      <section id="projects" className="mb-24">
+        <h3 className="text-2xl font-semibold text-gray-100 mb-4 hover:text-emerald-400 transition-colors duration-300">
+          Projets
+        </h3>
+        <div className="space-y-12">
+          {projects.map((project, index) => (
+              <div key={index} className="group">
+                <div className="space-y-4">
+                  <div className="flex items-center space-x-2">
+                    <h4 className="text-xl text-gray-100 group-hover:text-emerald-400 transition-colors duration-300">
+                      {project.title}
+                    </h4>
+                    <div className="flex space-x-2">
+                      <ExternalLink className="w-4 h-4 text-emerald-400 group-hover:rotate-45 transition-transform duration-300" />
+                      <Github className="w-4 h-4 text-emerald-400 group-hover:scale-110 transition-transform duration-300" />
+                    </div>
+                  </div>
+                  <p className="text-gray-400 group-hover:text-gray-200 transition-colors duration-300">
+                    {project.description}
+                  </p>
+                  <ul className="list-disc list-inside space-y-2 text-gray-400">
+                    {project.details.map((detail, idx) => (
+                        <li key={idx} className="group-hover:text-gray-200 transition-colors duration-300">
+                          {detail}
+                        </li>
+                    ))}
+                  </ul>
+                  <div className="flex flex-wrap gap-2">
+                    {project.tech.map((tech) => (
+                        <Badge
+                            key={tech}
+                            variant="outline"
+                            className="bg-[#112240] text-emerald-400 border-emerald-400/30 hover:bg-emerald-400 hover:text-[#0a192f] transition-colors duration-300"
+                        >
+                          {tech}
+                        </Badge>
+                    ))}
+                  </div>
                 </div>
               </div>
-              <p className="text-gray-400 group-hover:text-gray-200 transition-colors duration-300">
-                {project.description}
-              </p>
-              <ul className="list-disc list-inside space-y-2 text-gray-400">
-                {project.details.map((detail, idx) => (
-                  <li key={idx} className="group-hover:text-gray-200 transition-colors duration-300">
-                    {detail}
-                  </li>
-                ))}
-              </ul>
-              <div className="flex flex-wrap gap-2">
-                {project.tech.map((tech) => (
-                  <Badge 
-                    key={tech} 
-                    variant="outline" 
-                    className="bg-[#112240] text-emerald-400 border-emerald-400/30 hover:bg-emerald-400 hover:text-[#0a192f] transition-colors duration-300"
-                  >
-                    {tech}
-                  </Badge>
-                ))}
-              </div>
-            </div>
-          </div>
-        ))}
-      </div>
-    </section>
+          ))}
+        </div>
+      </section>
   )
 }
 

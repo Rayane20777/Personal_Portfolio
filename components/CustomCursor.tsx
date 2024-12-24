@@ -33,8 +33,10 @@ const CustomCursor = () => {
       setHidden(false)
     }
 
-    const onMouseLeave = () => {
-      setHidden(true)
+    const onMouseLeave = (e: MouseEvent) => {
+      if (!e.relatedTarget || !(e.relatedTarget instanceof Element) || !e.relatedTarget.closest('aside')) {
+        setHidden(true)
+      }
     }
 
     const onMouseDown = () => {
@@ -77,43 +79,43 @@ const CustomCursor = () => {
   }, [])
 
   const cursorClasses = `
-    fixed pointer-events-none z-50 transition-transform duration-150 ease-out
+    fixed pointer-events-none z-[9999] transition-transform duration-150 ease-out
     ${hidden ? 'opacity-0' : 'opacity-100'}
     ${clicked ? 'scale-75' : ''}
     ${linkHovered ? 'scale-150' : ''}
   `
 
   const ringClasses = `
-    fixed pointer-events-none z-40 rounded-full transition-transform duration-300 ease-out
+    fixed pointer-events-none z-[9998] rounded-full transition-transform duration-300 ease-out
     border border-emerald-400
     ${linkHovered ? 'scale-150 opacity-50' : 'scale-100 opacity-100'}
   `
 
   return (
-    <>
-      <div
-        className={cursorClasses}
-        style={{
-          left: `${position.x}px`,
-          top: `${position.y}px`,
-          width: '8px',
-          height: '8px',
-          backgroundColor: '#4ade80',
-          borderRadius: '50%',
-          transform: 'translate(-50%, -50%)',
-        }}
-      />
-      <div
-        className={ringClasses}
-        style={{
-          left: `${position.x}px`,
-          top: `${position.y}px`,
-          width: '40px',
-          height: '40px',
-          transform: 'translate(-50%, -50%)',
-        }}
-      />
-    </>
+      <>
+        <div
+            className={cursorClasses}
+            style={{
+              left: `${position.x}px`,
+              top: `${position.y}px`,
+              width: '8px',
+              height: '8px',
+              backgroundColor: '#4ade80',
+              borderRadius: '50%',
+              transform: 'translate(-50%, -50%)',
+            }}
+        />
+        <div
+            className={ringClasses}
+            style={{
+              left: `${position.x}px`,
+              top: `${position.y}px`,
+              width: '40px',
+              height: '40px',
+              transform: 'translate(-50%, -50%)',
+            }}
+        />
+      </>
   )
 }
 
