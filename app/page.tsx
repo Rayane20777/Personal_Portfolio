@@ -68,7 +68,7 @@ export default function Portfolio() {
       `}>
           <div className="space-y-12">
             {/* Personal Picture */}
-            <div className="relative w-48 h-48 mx-auto">
+            <div className="relative w-64 h-64 mx-auto">
               <Image
                   src="/images/me1.PNG"
                   alt="Fiach Rayane"
