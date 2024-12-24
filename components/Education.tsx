@@ -3,8 +3,8 @@ import React from 'react'
 const Education: React.FC = () => {
   const education = [
     {
-      title: "Formation en développement FULL-STACK Java Angular",
-      institution: "Youcode, Safi, UMoP",
+      title: "Formation en développement Web Java Angular",
+      institution: "Youcode, Safi, UM6P",
       period: "2023 - 2025",
     },
     {

@@ -106,7 +106,7 @@ export default function Portfolio() {
             {/* Download CV Button */}
             <div className="mt-6">
               <a
-                  href="/path-to-your-cv.pdf"
+                  href="/pdf/Cv-Fiach-Rayane.pdf"
                   download
                   className="flex items-center justify-center gap-2 bg-emerald-400 text-gray-900 py-2 px-4 rounded-md hover:bg-emerald-500 transition-colors duration-300"
               >
