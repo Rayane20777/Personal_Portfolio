@@ -4,7 +4,7 @@ const About: React.FC = () => {
   const technologies = [
     'Java & Spring Boot',
     'Angular',
-    'React.js',
+    'React',
     'Laravel',
     'PostgreSQL',
     'Docker',

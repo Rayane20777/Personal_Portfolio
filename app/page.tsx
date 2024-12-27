@@ -70,7 +70,7 @@ export default function Portfolio() {
             {/* Personal Picture */}
             <div className="relative w-64 h-64 mx-auto">
               <Image
-                  src="/images/me1.PNG"
+                  src="/images/me1.jpg"
                   alt="Fiach Rayane"
                   layout="fill"
                   objectFit="cover"
@@ -123,7 +123,7 @@ export default function Portfolio() {
                 className="text-gray-400 hover:text-emerald-400 transition-colors duration-300 transform hover:scale-110"
                 aria-label="Email"
             >
-              <Mail className="w-5 h-5" />
+              <Mail className="w-10 h-10" />
             </a>
             <a
                 href="https://github.com"
@@ -132,7 +132,7 @@ export default function Portfolio() {
                 className="text-gray-400 hover:text-emerald-400 transition-colors duration-300 transform hover:scale-110"
                 aria-label="GitHub"
             >
-              <Github className="w-5 h-5" />
+              <Github className="w-10 h-10" />
             </a>
             <a
                 href="https://linkedin.com"
@@ -141,7 +141,7 @@ export default function Portfolio() {
                 className="text-gray-400 hover:text-emerald-400 transition-colors duration-300 transform hover:scale-110"
                 aria-label="LinkedIn"
             >
-              <Linkedin className="w-5 h-5" />
+              <Linkedin className="w-10 h-10" />
             </a>
           </div>
         </aside>
