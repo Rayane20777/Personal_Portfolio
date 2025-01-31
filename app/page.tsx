@@ -126,7 +126,7 @@ export default function Portfolio() {
               <Mail className="w-10 h-10" />
             </a>
             <a
-                href="https://github.com"
+                href="https://github.com/Rayane20777"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="text-gray-400 hover:text-emerald-400 transition-colors duration-300 transform hover:scale-110"
@@ -135,7 +135,7 @@ export default function Portfolio() {
               <Github className="w-10 h-10" />
             </a>
             <a
-                href="https://linkedin.com"
+                href="https://www.linkedin.com/in/rayane-fiach/"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="text-gray-400 hover:text-emerald-400 transition-colors duration-300 transform hover:scale-110"

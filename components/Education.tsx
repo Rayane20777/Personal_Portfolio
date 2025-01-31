@@ -16,7 +16,7 @@ const Education: React.FC = () => {
 
   const courses = [
     {
-      title: "MongoDB Java Developer Path",
+      title: "Certified Junior Angular Developer",
       status: "En Progrès"
     },
     {

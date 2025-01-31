@@ -4,13 +4,15 @@ const About: React.FC = () => {
   const technologies = [
     'Java & Spring Boot',
     'Angular',
-    'React',
     'Laravel',
+    'React',
     'PostgreSQL',
+    'MySql',
+    'UML',
     'Docker',
     'Jenkins',
     'Git/GitHub',
-    'MongoDB'
+    'Jira',
   ]
 
   return (
